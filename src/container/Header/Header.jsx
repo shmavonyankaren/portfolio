@@ -1,49 +1,18 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { AppWrap } from "../../wrapper";
-import { images } from "../../constants";
 import "./Header.scss";
-import { GreatingComp } from "../../componetens";
-
-const scaleVariants = {
-  whileInView: {
-    scale: [0, 1],
-    opacity: [0, 1],
-    transition: {
-      duration: 1,
-      ease: "easeInOut",
-    },
-  },
-};
+import {
+  GreatingComp,
+  MainImageComp,
+  MainSecondImageComp,
+} from "../../componetens";
 
 const Header = () => {
   return (
     <div className="app__header app__flex">
       <GreatingComp />
-      <motion.div
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__header-img"
-      >
-        <img src={images.profilegoodone} alt="imag" />
-        <motion.img
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          src={images.circle}
-          className="overlay_circle"
-        />
-      </motion.div>
-      <motion.div
-        variants={scaleVariants}
-        whileInView={scaleVariants.whileInView}
-        className="app__header-circles"
-      >
-        {[images.react, images.redux, images.node].map((circle, index) => (
-          <div className="circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={circle} alt="circle" />
-          </div>
-        ))}
-      </motion.div>
+      <MainImageComp />
+      <MainSecondImageComp />
     </div>
   );
 };
