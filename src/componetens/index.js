@@ -15,3 +15,4 @@ export { default as SkillsComp } from "./SkillsComp/SkillsComp.jsx";
 export { default as Experiences } from "./Experiences/Experiences.jsx";
 export { default as TestimonialsImage } from "./TestimonialsImage/TestimonialsImage.jsx";
 export { default as TestimonialInfo } from "./TestimonialInfo/TestimonialInfo.jsx";
+export { default as WorkFilter } from "./WorkFilter/WorkFilter.jsx";

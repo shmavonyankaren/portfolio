@@ -5,6 +5,7 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
+import { WorkFilter } from "../../componetens";
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -40,21 +41,10 @@ const Work = () => {
       <h2 className="head-text">
         My Creative <span>Portfolio </span> <br /> section <span></span>
       </h2>
-      <div className="app__work-filter">
-        {["Next.js", "Web App", "Mobile App", "React JS", "All"].map(
-          (item, index) => (
-            <div
-              className={`app__work-filter-item app__flex p-text ${
-                activeFilter === item ? "item-active" : ""
-              }`}
-              key={index}
-              onClick={() => handleWorkFilter(item)}
-            >
-              {item}
-            </div>
-          )
-        )}
-      </div>
+      <WorkFilter
+        handleWorkFilter={handleWorkFilter}
+        activeFilter={activeFilter}
+      />
 
       <motion.div
         animate={animateCard}
