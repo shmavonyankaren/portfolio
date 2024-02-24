@@ -8,3 +8,4 @@ export { default as StarsBackground } from "./StarsBackground/StarsBackground.js
 export { default as ContactPhoneEmailPart } from "./ContactPhoneEmailPart/ContactPhoneEmailPart.jsx";
 export { default as ContactForm } from "./ContactForm/ContactForm.jsx";
 export { default as SendButton } from "./SendButton/SendButton.jsx";
+export { default as GreatingComp } from "./GreatingComp/GreatingComp.jsx";
