@@ -41,7 +41,7 @@ import LogoKaren from "../assets/LogoKaren.png";
 import LogoK from "../assets/LogoK.png";
 import LogoKar from "../assets/LogoKar.png";
 
-export default {
+const exports = {
   email,
   mobile,
   LogoKaren,
@@ -83,3 +83,4 @@ export default {
   skype,
   spotify,
 };
+export default exports;
