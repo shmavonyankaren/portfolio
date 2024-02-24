@@ -16,3 +16,4 @@ export { default as Experiences } from "./Experiences/Experiences.jsx";
 export { default as TestimonialsImage } from "./TestimonialsImage/TestimonialsImage.jsx";
 export { default as TestimonialInfo } from "./TestimonialInfo/TestimonialInfo.jsx";
 export { default as WorkFilter } from "./WorkFilter/WorkFilter.jsx";
+export { default as WorkItem } from "./WorkItem/WorkItem.jsx";
