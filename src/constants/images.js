@@ -37,11 +37,17 @@ import bolt from "../assets/bolt.png";
 import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
+import LogoKaren from "../assets/LogoKaren.png";
+import LogoK from "../assets/LogoK.png";
+import LogoKar from "../assets/LogoKar.png";
 
 export default {
   email,
   mobile,
+  LogoKaren,
+  LogoKar,
   karen,
+  LogoK,
   profilegoodone,
   api,
   karengood,

@@ -1,0 +1,19 @@
+.send-button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--white-color);
+
+  font-weight: 500;
+  color: black;
+  outline: none;
+  margin: 2rem 0 0 0;
+  font-family: var(--font-base);
+
+  transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 25px #fef4f5;
+  }
+}
